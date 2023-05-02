@@ -1,9 +1,17 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Produtos } from './produto';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProdutoService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getProdutos(): Observable<Produtos[]> {
+    let url = "http://localhost:3000/clients";
+    return this.http.get<Produtos[]>(url);
+  }
 }
