@@ -1,22 +1,27 @@
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Id</th>
-      <th scope="col">Nome</th>
-      <th scope="col">Categoria</th>
-      <th scope="col">Descrição</th>
-      <th scope="col">Preço</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let produto of produto">
-      <th scope="row">{{produto.id}}</th>
-      <td>{{produto.nome}}</td>
-      <td>{{produto.categoria}}</td>
-      <td>{{produto.descricao}}</td>
-      <td>{{produto.preco}}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="card col-8 position-absolute top-50 start-50 translate-middle bg-info">
+  <div class="card-body bg-light shadow-lg rounded">
+    <div class="text-danger text-end fs-3">
+      <table class="table table-striped text-center">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let produto of produto">
+            <th scope="row">{{produto.id}}</th>
+            <td>{{produto.nome}}</td>
+            <td>{{produto.categoria}}</td>
+            <td>{{produto.descricao}}</td>
+            <td>R$ {{produto.preco}}</td>
+          </tr>
+        </tbody>
+      </table>
 
+    </div>
+  </div>
+</div>

@@ -11,7 +11,7 @@ export class ProdutoService {
   constructor(private http: HttpClient) { }
 
   getProdutos(): Observable<Produtos[]> {
-    let url = "http://localhost:3000/clients";
+    let url = "http://localhost:3000/produtos";
     return this.http.get<Produtos[]>(url);
   }
 }
