@@ -4,6 +4,6 @@
     {"id": 2, "nome": "Teclado", "categoria": "Periféricos", "descricao": "teclado preto com led rgb da razer...", "preco": 350.00},
     {"id": 3, "nome": "Chuteira", "categoria": "Calçados", "descricao": "Chuteira de salão preta da nike...", "preco": 400.00},
     {"id": 4, "nome": "Celular", "categoria": "Eletronicos", "descricao": "Smartphone Xiaomi Redmi Note 12...", "preco": 1500.00},
-    {"id": 5, "nome": "Geladeira", "categoria": "Eletronicos", "descricao": "Geladeira branca eletrolux...", "preco": 3000.00}
+    {"id": 5, "nome": "Geladeira", "categoria": "Eletrodométicos", "descricao": "Geladeira branca eletrolux...", "preco": 3000.00}
   ]
 }
